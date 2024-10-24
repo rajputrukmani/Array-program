@@ -1,0 +1,16 @@
+ class subExample {
+    public static void main(String[] args) {
+        String s="ChatGpt";
+        String s2="";
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i) == 'G' && s.charAt(i+1) == 'P' && s.charAt(i+2) == 'T' ){
+
+            s2=""+s.charAt(i)+s.charAt(i+1)+s.charAt(i+2);
+
+        }
+    
+    }
+        System.out.println(s2);
+    }
+    
+}
