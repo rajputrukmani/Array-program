@@ -1,0 +1,29 @@
+  
+
+public class PrimeNumber {
+    public static void main(String[] args) {
+        int n=10;
+        int [] prime=new int[n];
+        int count=0;
+        int num=2;
+        while(count < n){
+            boolean result=true;
+        for(int i=2; i<=Math.sqrt(num); i++){
+            if(num % i == 0){
+                result=false;
+                break;
+            }
+        }
+        if(result){
+            prime[count]=num;
+            count++;
+        }
+        num++;
+
+    }
+    System.out.println("This is a 10 Prime number");
+    for(int i=0; i<n; i++){
+        System.out.println(prime[i]);
+    }
+}
+}
