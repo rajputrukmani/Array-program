@@ -1,0 +1,25 @@
+
+public class arrayFlattern {
+//Flatten the 2D array [[1, 2], [3, 4]] into a 1D array.
+    public static void main(String[] args) {
+        int arr[][]={{1,2},{3,4}};
+        int row=arr.length;
+        int colum=arr[0].length;
+        int result[]=new int[row*colum] ;
+        int index=0;
+        for(int i=0; i<row; i++){
+            for(int j=0; j<colum; j++){
+                result[index++]=arr[i][j];
+                
+            }
+        }
+        System.out.println("Flat array= ");
+
+        for(int num : result){
+            System.out.print(num+" ");
+
+        }
+    }
+    }
+    
+
